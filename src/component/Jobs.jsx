@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data.json";
+import data from "./data.json";
 import SingleJob from "./SingleJob";
 
 function Jobs() {
@@ -8,7 +8,7 @@ function Jobs() {
       {data.map((job) => {
         return (
           <div className="job" key={job.id}>
-            <SingleJob {...job} />
+            <SingleJob job={job} />
           </div>
         );
       })}

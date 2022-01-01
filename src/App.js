@@ -1,5 +1,11 @@
+import Jobs from "./component/Jobs";
+
 function App() {
-  return <main></main>;
+  return (
+    <main>
+      <Jobs />
+    </main>
+  );
 }
 
 export default App;
