@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
 }
 
 body {
@@ -23,4 +26,28 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.jobs {
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+.job {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

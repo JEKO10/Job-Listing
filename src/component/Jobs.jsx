@@ -7,7 +7,7 @@ function Jobs() {
     <section className="jobs">
       {data.map((job) => {
         return (
-          <div className="job" key={job.id}>
+          <div key={job.id}>
             <SingleJob job={job} />
           </div>
         );
