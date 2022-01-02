@@ -22,10 +22,26 @@ header img {
 .searchBar {
   max-width: 1100px;
   margin: 0 auto;
-  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 15px 15px -4px #5ba4a433;
+  padding: 25px;
+}
+
+.searchBar button {
+  background: none;
+  border: none;
+  color: #7b8e8e;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.searchBar button:hover {
+  text-decoration: underline;
+  color: #000;
 }
 
 .jobs {
