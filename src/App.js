@@ -1,5 +1,5 @@
-import Jobs from "./component/Jobs";
 import Search from "./component/Search";
+import Jobs from "./component/Jobs";
 import HeaderImg from "./bg-header-desktop.svg";
 
 function App() {

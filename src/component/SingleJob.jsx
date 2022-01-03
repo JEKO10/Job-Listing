@@ -1,6 +1,8 @@
-import React from "react";
-
 function SingleJob({ job }) {
+  const { tools, languages, level, role } = job;
+
+  const jobTags = [level, role, ...languages, ...tools];
+
   return (
     <div className={`job ${job.featured ? "featured" : ""}`}>
       <div>
@@ -24,14 +26,29 @@ function SingleJob({ job }) {
         </div>
       </div>
       <div>
-        <h1 className="tag">{job.role}</h1>
+        {jobTags.map((tag, index) => {
+          return (
+            <h1 className="tag" key={index}>
+              {tag}
+            </h1>
+          );
+        })}
+        {/* <h1 className="tag">{job.role}</h1>
         <h1 className="tag">{job.level}</h1>
-        {job.languages.map((lang) => {
-          return <h1 className="tag">{lang}</h1>;
+        {job.languages.map((lang, index) => {
+          return (
+            <h1 className="tag" key={index}>
+              {lang}
+            </h1>
+          );
         })}
-        {job.tools.map((tool) => {
-          return <h1 className="tag">{tool}</h1>;
-        })}
+        {job.tools.map((tool, index) => {
+          return (
+            <h1 className="tag" key={index}>
+              {tool}
+            </h1>
+          );
+        })} */}
       </div>
     </div>
   );

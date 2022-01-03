@@ -33,7 +33,6 @@ header img {
   padding: 25px;
   position: relative;
   z-index: 1;
-  display: none;
 }
 
 .searchBar button {
