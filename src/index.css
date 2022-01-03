@@ -78,12 +78,61 @@ header img {
 .job > div:first-of-type > div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
 .job img {
   padding-right: 20px;
+}
+
+.job #name {
+  font-size: 1rem;
+  color: #96d1f6;
+}
+
+.job #new {
+  background-color: #38b2ac;
+  color: #fff;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  padding: 8px 10px 5px 10px;
+  border-radius: 20px;
+}
+
+.job #featured {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 8px 5px 8px;
+  border-radius: 20px;
+}
+
+.job #position {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.job #position:hover {
+  color: #1e99e6;
+}
+
+.job #posted,
+.job #contract,
+.job #location {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.job span {
+  padding: 0 10px;
+  font-size: 1.2rem;
+  opacity: 0.5;
 }
 
 .job .tag {
