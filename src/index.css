@@ -12,16 +12,18 @@ body {
 }
 
 header {
-  background: #5ba4a4;
+  background: #38b2ac;
 }
 
 header img {
+  display: block;
+  height: 100%;
   width: 100%;
 }
 
 .searchBar {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: -2rem auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +31,9 @@ header img {
   background-color: #fff;
   box-shadow: 0 15px 15px -4px #5ba4a433;
   padding: 25px;
+  position: relative;
+  z-index: 1;
+  display: none;
 }
 
 .searchBar button {
@@ -46,13 +51,22 @@ header img {
 
 .jobs {
   max-width: 1100px;
-  margin: 2rem auto;
+  margin: 5rem auto;
 }
 
 .job {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  margin: 2rem 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -1px #0000000f;
+}
+
+.featured {
+  border-left: 5px solid #38b2ac;
 }
 
 .job div {
@@ -61,9 +75,29 @@ header img {
   align-items: center;
 }
 
-.job > div:first-of-type {
+.job > div:first-of-type > div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.job img {
+  padding-right: 20px;
+}
+
+.job .tag {
+  color: #38b8b9;
+  background-color: #e5fffa;
+  font-size: 0.7rem;
+  padding: 7px 5px 5px 5px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.job .tag:hover {
+  background-color: #38b2ac;
+  color: #fff;
 }
