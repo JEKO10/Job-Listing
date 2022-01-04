@@ -1,8 +1,4 @@
-function SingleJob({ job, handleFilters }) {
-  const { tools, languages, level, role } = job;
-
-  const jobTags = [level, role, ...languages, ...tools];
-
+function SingleJob({ job, handleFilters, jobTags }) {
   return (
     <div className={`job ${job.featured ? "featured" : ""}`}>
       <div>

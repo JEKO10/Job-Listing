@@ -3,7 +3,7 @@ import data from "./data.json";
 import SingleJob from "./SingleJob";
 
 function Jobs({ handleFilters, filters }) {
-  let filterJobs = (jobTags, filters) =>
+  const filterJobs = (jobTags, filters) =>
     filters.every((value) => jobTags.includes(value));
 
   return (
@@ -15,7 +15,11 @@ function Jobs({ handleFilters, filters }) {
         return (
           filterJobs(jobTags, filters) && (
             <div key={job.id}>
-              <SingleJob job={job} handleFilters={handleFilters} />
+              <SingleJob
+                job={job}
+                handleFilters={handleFilters}
+                jobTags={jobTags}
+              />
             </div>
           )
         );

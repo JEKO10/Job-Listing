@@ -5,7 +5,7 @@ function Search({ filters, clearAll, clearFilter }) {
   return (
     <section>
       <div className="searchBar">
-        <div>
+        <div className="tagsContainer">
           {filters.map((tag, index) => {
             return (
               <h3 key={index} className="filterTag">
