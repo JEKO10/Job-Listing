@@ -32,7 +32,7 @@ function App() {
           clearFilter={clearFilter}
         />
       )}
-      <Jobs handleFilters={handleFilters} />
+      <Jobs handleFilters={handleFilters} filters={filters} />
     </main>
   );
 }
