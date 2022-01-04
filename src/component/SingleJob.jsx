@@ -1,4 +1,4 @@
-function SingleJob({ job }) {
+function SingleJob({ job, handleFilters }) {
   const { tools, languages, level, role } = job;
 
   const jobTags = [level, role, ...languages, ...tools];
@@ -28,27 +28,17 @@ function SingleJob({ job }) {
       <div>
         {jobTags.map((tag, index) => {
           return (
-            <h1 className="tag" key={index}>
+            <h1
+              className="tag"
+              key={index}
+              onClick={() => {
+                handleFilters(tag);
+              }}
+            >
               {tag}
             </h1>
           );
         })}
-        {/* <h1 className="tag">{job.role}</h1>
-        <h1 className="tag">{job.level}</h1>
-        {job.languages.map((lang, index) => {
-          return (
-            <h1 className="tag" key={index}>
-              {lang}
-            </h1>
-          );
-        })}
-        {job.tools.map((tool, index) => {
-          return (
-            <h1 className="tag" key={index}>
-              {tool}
-            </h1>
-          );
-        })} */}
       </div>
     </div>
   );

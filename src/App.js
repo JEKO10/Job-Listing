@@ -32,7 +32,7 @@ function App() {
           clearFilter={clearFilter}
         />
       )}
-      <Jobs />
+      <Jobs handleFilters={handleFilters} />
     </main>
   );
 }
