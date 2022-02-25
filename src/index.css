@@ -183,3 +183,64 @@ header img {
   background-color: #38b2ac;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .jobs,
+  .searchBar {
+    max-width: 95%;
+  }
+
+  .searchBar button {
+    margin-left: 1rem;
+  }
+
+  .tagsContainer {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .tagsContainer .filterTag {
+    margin: 0.5rem;
+  }
+
+  .job {
+    flex-direction: column;
+  }
+
+  .job > div {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .job > div:last-of-type {
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .job {
+    padding: 10px;
+  }
+
+  .job > div:first-of-type {
+    flex-direction: column;
+  }
+
+  .job > div:first-of-type > div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .job > div:last-of-type {
+    flex-wrap: wrap;
+  }
+
+  .job .tag {
+    margin: 0.5rem;
+  }
+
+  .job img {
+    margin: 0.5rem 0 1rem 0;
+  }
+}
