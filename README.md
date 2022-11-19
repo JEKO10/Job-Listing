@@ -13,7 +13,7 @@
 
 ## Project task
 
-This is a solution to the [Job listings with filtering](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Created in React, using local JSON file.
+This is a solution to the [Job listings with filtering](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Created in React, using a local JSON file.
 
 ## Project overview
 
